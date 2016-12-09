@@ -3,16 +3,16 @@
 <script>
    for (var i = "#"; i.length <= 7; i += "#") {
             console.log(i);
-           }
+   }
     //Второе задание
     
-    var result = "\n";
-for (var row = 1; row <= 8; row++) {
-for (var cell = 1; cell <= 16; cell++) {
-result += (row % 2 == cell % 2) ? "#" : " "; //Можно еще побитово - (row & 1 == cell & 1)
-}
-result += "\n";
-}
+var result = "\n";
+    for (var row = 1; row <= 8; row++) {
+        for (var cell = 1; cell <= 8; cell++) {
+            result += (row % 2 == cell % 2) ? "#" : " ";
+        }
+        result += "\n";
+    }
 console.log(result);
     
 </script>
