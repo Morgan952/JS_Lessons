@@ -11,15 +11,28 @@ console.log(min(0, -10)); // → -10
     
    var text = prompt("Введите текст", "");
     function countBs(text){
-       var text = text.length;
+        text = text.length;
         return text;
     };
     console.log(countBs(text));
     
-    function countChar() {
-        var tx = text.charAt;
-        return tx;
+    function countChar(text, num) {
+            var symbol = 0;
+                for(var i = 0; i < text.length; i++){
+                    if(text.charAt(i) == num) {
+                         return symbol;
+                    }
+                      else { symbol += 1;
+                           }
+                   }
+                }
+    
+    console.log(countChar(text, 'и'));
+
+function isEven(x) {
+    if (x == 0) {
+        return true;
     }
     
-      console.log(countChar(3));
+}
 </script>
