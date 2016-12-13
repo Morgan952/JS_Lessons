@@ -8,31 +8,26 @@
 console.log(min(0, 10)); // → 0
 console.log(min(0, -10)); // → -10
 
-    
-   var text = prompt("Введите текст", "");
+
+    var text = 'привет';
     function countBs(text){
         text = text.length;
         return text;
     };
     console.log(countBs(text));
-    
+
     function countChar(text, num) {
             var symbol = 0;
                 for(var i = 0; i < text.length; i++){
                     if(text.charAt(i) == num) {
                          return symbol;
                     }
-                      else { symbol += 1;
-                           }
+                    else { 
+                        symbol += 1;
+                         }
                    }
                 }
-    
+
     console.log(countChar(text, 'и'));
 
-function isEven(x) {
-    if (x == 0) {
-        return true;
-    }
-    
-}
 </script>
